@@ -43,38 +43,125 @@
     <div class="custom-cursor__cursor"></div>
     <div class="custom-cursor__cursor-two"></div>
 
-    <div class="preloader">
-        <div class="preloader__image" style="background-image: url(assets/images/loader.png);"></div>
-    </div>
+    
     <!-- /.preloader -->
     <div class="page-wrapper">
-        <div class="topbar">
+       <div class="topbar">
             <div class="container">
                 <div class="topbar__inner">
                     <a href="#" class="topbar__toggler main-header__toggler"><i><span></span><span></span><span></span></i>Menu</a>
-                    <div class="topbar__logo">
-                        <a href="index.html">
-                            <img src="assets/images/logo-dark.png" alt="Lotech HTML" width="133">
-                        </a>
-                    </div><!-- /.topbar__logo -->
+                   <div class="topbar__logo"
+     style="display:flex; justify-content:center; align-items:center; width:100%;">
+    
+    <a href="index.html" style="display:flex; align-items:center; gap:10px; text-decoration:none;">
+
+        <!-- Loader Icon -->
+        <div class="loader"></div>
+
+        <!-- Company Name -->
+        <span
+            style="
+                font-size:30px;
+                font-weight:700;
+                letter-spacing:2px;
+                color:#111;
+                font-family:'Poppins', Arial, sans-serif;
+            "
+        >
+            BYTEGEN
+        </span>
+
+    </a>
+</div>
+
+<style>
+/* Loader CSS */
+.loader {
+    position: relative;
+    width: 2.5em;
+    height: 2.5em;
+    transform: rotate(165deg);
+}
+
+.loader:before,
+.loader:after {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    display: block;
+    width: 0.5em;
+    height: 0.5em;
+    border-radius: 0.25em;
+    transform: translate(-50%, -50%);
+}
+
+.loader:before {
+    animation: before8 2s infinite;
+}
+
+.loader:after {
+    animation: after6 2s infinite;
+}
+
+@keyframes before8 {
+    0% {
+        width: 0.5em;
+        box-shadow: 1em -0.5em rgba(225, 20, 98, 0.75),
+                    -1em 0.5em rgba(111, 202, 220, 0.75);
+    }
+    35% {
+        width: 2.5em;
+        box-shadow: 0 -0.5em rgba(225, 20, 98, 0.75),
+                    0 0.5em rgba(111, 202, 220, 0.75);
+    }
+    70% {
+        width: 0.5em;
+        box-shadow: -1em -0.5em rgba(225, 20, 98, 0.75),
+                     1em 0.5em rgba(111, 202, 220, 0.75);
+    }
+    100% {
+        box-shadow: 1em -0.5em rgba(225, 20, 98, 0.75),
+                    -1em 0.5em rgba(111, 202, 220, 0.75);
+    }
+}
+
+@keyframes after6 {
+    0% {
+        height: 0.5em;
+        box-shadow: 0.5em 1em rgba(61, 184, 143, 0.75),
+                    -0.5em -1em rgba(233, 169, 32, 0.75);
+    }
+    35% {
+        height: 2.5em;
+        box-shadow: 0.5em 0 rgba(61, 184, 143, 0.75),
+                    -0.5em 0 rgba(233, 169, 32, 0.75);
+    }
+    70% {
+        height: 0.5em;
+        box-shadow: 0.5em -1em rgba(61, 184, 143, 0.75),
+                    -0.5em 1em rgba(233, 169, 32, 0.75);
+    }
+    100% {
+        box-shadow: 0.5em 1em rgba(61, 184, 143, 0.75),
+                    -0.5em -1em rgba(233, 169, 32, 0.75);
+    }
+}
+</style>
+
+<!-- /.topbar__logo -->
                     <div class="topbar__social">
                         <p class="topbar__social__text">Follow Us</p>
                         <a href="https://facebook.com">
                             <i class="fab fa-facebook-f" aria-hidden="true"></i>
                             <span class="sr-only">Facebook</span>
                         </a>
-                        <a href="https://x.com">
-                            <i class="fab fa-twitter" aria-hidden="true"></i>
-                            <span class="sr-only">Twitter</span>
-                        </a>
+                       
                         <a href="https://instagram.com">
                             <i class="fab fa-instagram" aria-hidden="true"></i>
                             <span class="sr-only">Instagram</span>
                         </a>
-                        <a href="https://www.youtube.com/">
-                            <i class="fab fa-youtube" aria-hidden="true"></i>
-                            <span class="sr-only">Youtube</span>
-                        </a>
+                       
                     </div><!-- /.topbar-one__social -->
                 </div>
             </div>
@@ -85,125 +172,19 @@
                     <nav class="main-header__nav main-menu">
                         <ul class="main-menu__list">
 
-
-                            <li class="megamenu megamenu-clickable megamenu-clickable--toggler">
-                                <a href="index.html" data-title="Demos"><span>Demos</span></a>
-                                <ul>
-                                    <li>
-                                        <div class="megamenu-popup">
-                                            <a href="#" class="megamenu-clickable--close"><span class="icon-close"></span></a>
-                                            <!-- /.megamenu-clickable--close -->
-                                            <div class="megamenu-popup__content">
-                                                <div class="demo-one">
-                                                    <div class="container">
-                                                        <div class="row">
-                                                            <div class="col-md-6 col-lg-4">
-                                                                <div class="demo-one__card">
-                                                                    <div class="demo-one__image">
-                                                                        <img src="assets/images/lotech-landing/home-1.jpg" alt="lotech">
-                                                                        <div class="demo-one__btns">
-                                                                            <a href="index.html" class="lotech-btn demo-one__btn">
-                                                                                <span>Multi Page</span>
-                                                                            </a><!-- /.thm-btn demo-one__btn -->
-                                                                            <a href="index-one-page.html" class="lotech-btn demo-one__btn">
-                                                                                <span>One Page</span>
-                                                                            </a><!-- /.thm-btn demo-one__btn -->
-                                                                        </div><!-- /.demo-one__btns -->
-                                                                    </div><!-- /.demo-one__image -->
-                                                                    <div class="demo-one__content">
-                                                                        <h3 class="demo-one__title">
-                                                                            <a href="index.html">Home Page 01</a>
-                                                                        </h3><!-- /.demo-one__title -->
-                                                                    </div><!-- /.demo-one__content -->
-                                                                </div><!-- /.demo-one__card -->
-                                                            </div><!-- /.col-md-6 col-lg-3 -->
-                                                            <div class="col-md-6 col-lg-4">
-                                                                <div class="demo-one__card">
-                                                                    <div class="demo-one__image">
-                                                                        <img src="assets/images/lotech-landing/home-2.jpg" alt="lotech">
-                                                                        <div class="demo-one__btns">
-                                                                            <a href="index-2.html" class="lotech-btn demo-one__btn">
-                                                                                <span>Multi Page</span>
-                                                                            </a><!-- /.thm-btn demo-one__btn -->
-                                                                            <a href="index-2-one-page.html" class="lotech-btn demo-one__btn">
-                                                                                <span>One Page</span>
-                                                                            </a><!-- /.thm-btn demo-one__btn -->
-                                                                        </div><!-- /.demo-one__btns -->
-                                                                    </div><!-- /.demo-one__image -->
-                                                                    <div class="demo-one__content">
-                                                                        <h3 class="demo-one__title">
-                                                                            <a href="index-2.html">Home Page 02</a>
-                                                                        </h3><!-- /.demo-one__title -->
-                                                                    </div><!-- /.demo-one__content -->
-                                                                </div><!-- /.demo-one__card -->
-                                                            </div><!-- /.col-md-6 col-lg-3 -->
-                                                            <div class="col-md-6 col-lg-4">
-                                                                <div class="demo-one__card">
-                                                                    <div class="demo-one__image">
-                                                                        <img src="assets/images/lotech-landing/home-3.jpg" alt="lotech">
-                                                                        <div class="demo-one__btns">
-                                                                            <a href="index-3.html" class="lotech-btn demo-one__btn">
-                                                                                <span>Multi Page</span>
-                                                                            </a><!-- /.thm-btn demo-one__btn -->
-                                                                            <a href="index-3-one-page.html" class="lotech-btn demo-one__btn">
-                                                                                <span>One Page</span>
-                                                                            </a><!-- /.thm-btn demo-one__btn -->
-                                                                        </div><!-- /.demo-one__btns -->
-                                                                    </div><!-- /.demo-one__image -->
-                                                                    <div class="demo-one__content">
-                                                                        <h3 class="demo-one__title">
-                                                                            <a href="index-3.html">Home Page 03</a>
-                                                                        </h3><!-- /.demo-one__title -->
-                                                                    </div><!-- /.demo-one__content -->
-                                                                </div><!-- /.demo-one__card -->
-                                                            </div><!-- /.col-md-6 col-lg-3 -->
-                                                            <div class="col-md-6 col-lg-4">
-                                                                <div class="demo-one__card">
-                                                                    <div class="demo-one__image">
-                                                                        <img src="assets/images/lotech-landing/home-boxed.jpg" alt="lotech">
-                                                                        <div class="demo-one__btns">
-                                                                            <a href="index-boxed.html" class="lotech-btn demo-one__btn">
-                                                                                <span>View Page</span>
-                                                                            </a><!-- /.thm-btn demo-one__btn -->
-                                                                        </div><!-- /.demo-one__btns -->
-                                                                    </div><!-- /.demo-one__image -->
-                                                                    <div class="demo-one__content">
-                                                                        <h3 class="demo-one__title">
-                                                                            <a href="index-boxed.html">Home Boxed</a>
-                                                                        </h3><!-- /.demo-one__title -->
-                                                                    </div><!-- /.demo-one__content -->
-                                                                </div><!-- /.demo-one__card -->
-                                                            </div><!-- /.col-md-6 col-lg-3 -->
-                                                            <div class="col-md-6 col-lg-4">
-                                                                <div class="demo-one__card">
-                                                                    <div class="demo-one__image">
-                                                                        <img src="assets/images/lotech-landing/home-rtl.jpg" alt="lotech">
-                                                                        <div class="demo-one__btns">
-                                                                            <a href="index-rtl.html" class="lotech-btn demo-one__btn">
-                                                                                <span>View Page</span>
-                                                                            </a><!-- /.thm-btn demo-one__btn -->
-                                                                        </div><!-- /.demo-one__btns -->
-                                                                    </div><!-- /.demo-one__image -->
-                                                                    <div class="demo-one__content">
-                                                                        <h3 class="demo-one__title">
-                                                                            <a href="index-rtl.html">Home RTL</a>
-                                                                        </h3><!-- /.demo-one__title -->
-                                                                    </div><!-- /.demo-one__content -->
-                                                                </div><!-- /.demo-one__card -->
-                                                            </div><!-- /.col-md-6 col-lg-3 -->
-                                                        </div><!-- /.row -->
-                                                    </div><!-- /.container -->
-                                                </div><!-- /.demos-one -->
-                                            </div><!-- /.megamenu-popup__content -->
-                                        </div><!-- /.megamenu-popup -->
-                                    </li>
-                                </ul>
+                            <li class="">
+                                <a href="index.html" data-title="Home"><span>Home</span></a>
+                                
                             </li>
+
 
                             <li>
                                 <a href="about.html" data-title="About"><span>About</span></a>
                             </li>
-                            <li class="dropdown">
+                            <li>
+                                <a href="services.html" data-title="Services"><span>Services</span></a>
+                            </li>
+                            <!-- <li class="dropdown">
                                 <a href="#" data-title="Pages"><span>Pages</span></a>
                                 <ul>
                                     <li>
@@ -326,7 +307,7 @@
                                     <li><a href="cart.html">Cart</a></li>
                                     <li><a href="checkout.html">Checkout</a></li>
                                 </ul>
-                            </li>
+                            </li> -->
                             <li class="dropdown">
                                 <a href="#" data-title="Blog"><span>Blog</span></a>
                                 <ul class="sub-menu">
@@ -383,10 +364,7 @@
                             <span></span>
                             <span></span>
                         </div><!-- /.mobile-nav__toggler -->
-                        <a href="#" class="search-toggler main-header__search">
-                            <i class="flaticon-search" aria-hidden="true"></i>
-                            <span class="sr-only">Search</span>
-                        </a><!-- /.search-toggler -->
+                       
                         <a href="contact.html" class="lotech-btn main-header__btn">
                             <span>Get a Quote<span class="lotech-btn__icon"><i class="flaticon-up-right-arrow"></i><i class="flaticon-up-right-arrow"></i></span></span>
                         </a><!-- /.thm-btn main-header__btn -->
@@ -419,29 +397,27 @@
                             <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-duration="1500" data-aos-delay="100">
                                 <div class="contact-info__card">
                                     <h3 class="contact-info__card__title">Phone</h3>
-                                    <p class="contact-info__card__text">We’re interested in working together</p>
+                                    <p class="contact-info__card__text">Reach out to our support team anytime</p>
                                     <ul class="contact-info__card__list list-unstyled">
-                                        <li><a href="tel:+03443159287">+923443159287</a></li>
+                                        <li><a href="tel:+923443159287">+92 344 3159287</a></li>
                                     </ul>
                                 </div><!-- /.contact-info__card -->
                             </div><!-- /.col-lg-4 col-md-6 -->
                             <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-duration="1500" data-aos-delay="200">
                                 <div class="contact-info__card">
                                     <h3 class="contact-info__card__title">Email</h3>
-                                    <p class="contact-info__card__text">Have a project in mind? Send a message.</p>
+                                    <p class="contact-info__card__text">Get in touch with digital solutions team</p>
                                     <ul class="contact-info__card__list list-unstyled">
-                                        <li><a href="mailto:infomela@gmail.com">infomela@gmail.com</a></li>
-                                        <li><a href="mailto:creativemela@gmail.com">creativemela@gmail.com</a></li>
+                                        <li><a href="mailto:bytegensolution@gmail.com">bytegensolution@gmail.com</a></li>
                                     </ul>
                                 </div><!-- /.contact-info__card -->
                             </div><!-- /.col-lg-4 col-md-6 -->
                             <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-duration="1500" data-aos-delay="300">
                                 <div class="contact-info__card">
                                     <h3 class="contact-info__card__title">Location</h3>
-                                    <p class="contact-info__card__text">Visit our headquarters around the world.</p>
+                                    <p class="contact-info__card__text">Visit our office in Karachi</p>
                                     <ul class="contact-info__card__list contact-info__card__list--address list-unstyled">
-                                        <li><a href="https://www.google.com/maps">260 Springs Crossing, <br> Canton, Georgia,
-                                                USA</a></li>
+                                        <li><a href="#">Oak Tower, Karachi, Pakistan</a></li>
                                     </ul>
                                 </div><!-- /.contact-info__card -->
                             </div><!-- /.col-lg-4 col-md-6 -->
@@ -450,61 +426,396 @@
                 </section><!-- /.contact-info section-space-bottom -->
 
                 <section class="contact-three section-space-bottom">
-                    <div class="container">
-                        <div class="row gutter-y-30">
-                            <div class="col-xl-8 col-lg-7">
-                                <div class="contact-three__wrapper">
-                                    <div class="sec-title text-left">
+    <div class="container">
+        <div class="row gutter-y-30">
+            <div class="col-xl-8 col-lg-7">
+                <div class="contact-three__wrapper">
+                    <div class="sec-title text-left">
 
-                                        <h6 class="sec-title__tagline bw-split-text">Contact Now</h6><!-- /.sec-title__tagline -->
+                        <h6 class="sec-title__tagline bw-split-text">Get In Touch</h6>
 
-                                        <h3 class="sec-title__title bw-split-text">Get In Touch with Us</h3><!-- /.sec-title__title -->
-                                    </div><!-- /.sec-title -->
-                                    <p class="contact-three__wrapper__text text-splite-up">
-                                        Affixed pretend account ten natural. Need eat week even yet that. Incommode delighted he
-                                        resolving.
-                                    </p>
-                                    <form class="contact-three__form contact-form-validated form-one" action="inc/sendemail.php" data-aos="fade-up" data-aos-duration="1200" data-aos-delay="300">
-                                        <div class="form-one__group">
-                                            <div class="form-one__control">
-                                                <input type="text" name="name" placeholder="Your Name*">
-                                            </div><!-- /.form-one__control -->
-                                            <div class="form-one__control">
-                                                <input type="email" name="email" placeholder="E-mail Address*">
-                                            </div><!-- /.form-one__control -->
-                                            <div class="form-one__control">
-                                                <input type="tel" name="phone" placeholder="Phone Number*">
-                                            </div><!-- /.form-one__control -->
-                                            <div class="form-one__control">
-                                                <div class="form-one__control__select">
-                                                    <label class="sr-only" for="your-problem">Your Problem*</label>
-                                                    <select class="selectpicker" id="your-problem">
-                                                        <option value="problem">Your problem*</option>
-                                                        <option value="problem 01">Your problem 01</option>
-                                                        <option value="problem 02">Your problem 02</option>
-                                                        <option value="problem 03">Your problem 03</option>
-                                                    </select>
-                                                </div><!-- /.main-menu__service -->
-                                            </div><!-- /.form-one__control -->
-                                            <div class="form-one__control form-one__control--full">
-                                                <textarea name="message" placeholder="Write message"></textarea>
-                                            </div><!-- /.form-one__control -->
-                                            <div class="form-one__control form-one__control--full">
-                                                <button type="submit" class="lotech-btn"><span>Send Message<span class="lotech-btn__icon"><i class="flaticon-up-right-arrow"></i><i class="flaticon-up-right-arrow"></i></span></span></button>
-                                            </div><!-- /.form-one__control -->
-                                        </div><!-- /.form-one__group -->
-                                    </form>
-                                    <div class="result"></div><!-- /.result -->
+                        <h3 class="sec-title__title bw-split-text">
+                            Let's Work Together on Your Next Project
+                        </h3>
+                    </div>
+
+                    <p class="contact-three__wrapper__text text-splite-up">
+                        Have a project in mind? We'd love to hear about it. Contact our team today and let's discuss how Bytegen can help transform your business with innovative digital solutions.
+                    </p>
+
+                    <!-- ✅ FORM WITH PROFESSIONAL VALIDATION -->
+                    <form id="contactForm" class="contact-three__form contact-form-validated form-one" 
+                          action="inc/sendemail.php"
+                          method="POST"
+                          data-aos="fade-up" 
+                          data-aos-duration="1200" 
+                          data-aos-delay="300"
+                          novalidate>
+
+                        <div class="form-one__group">
+                            <div class="form-one__control">
+                                <input type="text" name="name" id="name" placeholder="Your Name*" required>
+                                <span class="error-message" id="nameError"></span>
+                                <span class="success-message" id="nameSuccess"></span>
+                            </div>
+
+                            <div class="form-one__control">
+                                <input type="email" name="email" id="email" placeholder="E-mail Address*" required>
+                                <span class="error-message" id="emailError"></span>
+                                <span class="success-message" id="emailSuccess"></span>
+                            </div>
+
+                            <div class="form-one__control">
+                                <input type="tel" name="phone" id="phone" placeholder="Phone Number*" required>
+                                <span class="error-message" id="phoneError"></span>
+                                <span class="success-message" id="phoneSuccess"></span>
+                            </div>
+
+                            <div class="form-one__control">
+                                <div class="form-one__control__select">
+                                    <label class="sr-only" for="your-problem">Service Interested*</label>
+                                    <select class="selectpicker" id="your-problem" name="service" required>
+                                        <option value="">Select Service*</option>
+                                        <option value="web-development">Web Development</option>
+                                        <option value="digital-marketing">Digital Marketing</option>
+                                        <option value="agentic-ai">Agentic AI</option>
+                                        <option value="seo">SEO</option>
+                                        <option value="data-analysis">Data Analysis</option>  
+                                        <option value="it-consulting">IT Consulting</option>
+                                        <option value="other">Other</option>
+                                    </select>
                                 </div>
-                            </div><!-- /.col-xl-8 col-lg-7 -->
-                            <div class="col-xl-4 col-lg-5" data-aos="fade-up" data-aos-duration="1500">
-                                <div class="contact-three__image" data-speed="1.1" data-lag="0">
-                                    <img src="assets/images/resources/contact-1-2.jpg" alt="Lotech">
-                                </div>
-                            </div><!-- /.col-xl-4 col-lg-5 -->
+                                <span class="error-message" id="serviceError"></span>
+                                <span class="success-message" id="serviceSuccess"></span>
+                            </div>
+
+                            <div class="form-one__control form-one__control--full">
+                                <textarea name="message" id="message" placeholder="Tell us about your project" required></textarea>
+                                <span class="char-count">0/500</span>
+                                <span class="error-message" id="messageError"></span>
+                                <span class="success-message" id="messageSuccess"></span>
+                            </div>
+
+                            <div class="form-one__control form-one__control--full">
+                                <button type="submit" class="lotech-btn">
+                                    <span>
+                                        Send Message
+                                        <span class="lotech-btn__icon">
+                                            <i class="flaticon-up-right-arrow"></i>
+                                            <i class="flaticon-up-right-arrow"></i>
+                                        </span>
+                                    </span>
+                                </button>
+                            </div>
                         </div>
-                    </div><!-- /.container -->
-                </section><!-- /.contact-three section-space-bottom -->
+                    </form>
+
+                    <div class="result"></div>
+                </div>
+            </div>
+
+            <div class="col-xl-4 col-lg-5" data-aos="fade-up" data-aos-duration="1500">
+                <div class="contact-three__image" data-speed="1.1" data-lag="0">
+                    <img src="assets/images/gallery/contact.jpeg" alt="Bytegen" style="height: 600px;">
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<style>
+/* Professional Validation Styles */
+.form-one__control {
+    position: relative;
+    margin-bottom: 24px;
+}
+
+.error-message,
+.success-message {
+    display: none;
+    font-size: 12px;
+    font-weight: 500;
+    margin-top: 6px;
+    padding-left: 4px;
+    animation: slideDown 0.3s ease;
+}
+
+@keyframes slideDown {
+    from {
+        opacity: 0;
+        transform: translateY(-8px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.error-message {
+    color: #dc3545;
+    display: block;
+}
+
+.success-message {
+    color: #28a745;
+    display: block;
+}
+
+.form-one__control input,
+.form-one__control textarea,
+.form-one__control select {
+    border: 2px solid #e5e5e5;
+    transition: all 0.3s ease;
+}
+
+.form-one__control input:focus,
+.form-one__control textarea:focus,
+.form-one__control select:focus {
+    border-color: #e1145a;
+    box-shadow: 0 0 0 3px rgba(225, 20, 98, 0.1);
+    outline: none;
+}
+
+.form-one__control.error input,
+.form-one__control.error textarea,
+.form-one__control.error select {
+    border-color: #dc3545;
+    background-color: #fff5f5;
+}
+
+.form-one__control.error input:focus,
+.form-one__control.error textarea:focus,
+.form-one__control.error select:focus {
+    box-shadow: 0 0 0 3px rgba(220, 53, 69, 0.1);
+}
+
+.form-one__control.success input,
+.form-one__control.success textarea,
+.form-one__control.success select {
+    border-color: #28a745;
+    background-color: #f5fff5;
+}
+
+.form-one__control.success input:focus,
+.form-one__control.success textarea:focus,
+.form-one__control.success select:focus {
+    box-shadow: 0 0 0 3px rgba(40, 167, 69, 0.1);
+}
+
+.form-one__control input::placeholder,
+.form-one__control textarea::placeholder {
+    color: #999;
+}
+
+.char-count {
+    display: block;
+    font-size: 11px;
+    color: #999;
+    margin-top: 6px;
+    text-align: right;
+}
+
+/* Icon indicators */
+.form-one__control input.success-field::after,
+.form-one__control input.error-field::after {
+    position: absolute;
+    right: 12px;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 16px;
+}
+
+.form-one__control.success::after {
+    content: "✓";
+    position: absolute;
+    right: 12px;
+    top: 12px;
+    color: #28a745;
+    font-weight: bold;
+}
+
+.form-one__control.error::after {
+    content: "⚠";
+    position: absolute;
+    right: 12px;
+    top: 12px;
+    color: #dc3545;
+}
+</style>
+
+<script>
+document.addEventListener('DOMContentLoaded', function() {
+    const form = document.getElementById('contactForm');
+    const nameInput = document.getElementById('name');
+    const emailInput = document.getElementById('email');
+    const phoneInput = document.getElementById('phone');
+    const serviceSelect = document.getElementById('your-problem');
+    const messageInput = document.getElementById('message');
+
+    // Real-time validation
+    nameInput.addEventListener('blur', validateName);
+    emailInput.addEventListener('blur', validateEmail);
+    phoneInput.addEventListener('blur', validatePhone);
+    serviceSelect.addEventListener('change', validateService);
+    messageInput.addEventListener('blur', validateMessage);
+    messageInput.addEventListener('input', updateCharCount);
+
+    function validateName() {
+        const value = nameInput.value.trim();
+        const control = nameInput.parentElement;
+        const errorMsg = document.getElementById('nameError');
+        const successMsg = document.getElementById('nameSuccess');
+
+        if (!value) {
+            showError(control, errorMsg, 'Name is required');
+            return false;
+        } else if (value.length < 2) {
+            showError(control, errorMsg, 'Name must be at least 2 characters');
+            return false;
+        } else {
+            showSuccess(control, successMsg);
+            return true;
+        }
+    }
+
+    function validateEmail() {
+        const value = emailInput.value.trim();
+        const control = emailInput.parentElement;
+        const errorMsg = document.getElementById('emailError');
+        const successMsg = document.getElementById('emailSuccess');
+        const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+
+        if (!value) {
+            showError(control, errorMsg, 'Email is required');
+            return false;
+        } else if (!emailRegex.test(value)) {
+            showError(control, errorMsg, 'Please enter a valid email address');
+            return false;
+        } else {
+            showSuccess(control, successMsg);
+            return true;
+        }
+    }
+
+    function validatePhone() {
+        const value = phoneInput.value.trim();
+        const control = phoneInput.parentElement;
+        const errorMsg = document.getElementById('phoneError');
+        const successMsg = document.getElementById('phoneSuccess');
+        const phoneRegex = /^[\d\s\-\+\(\)]{10,}$/;
+
+        if (!value) {
+            showError(control, errorMsg, 'Phone number is required');
+            return false;
+        } else if (!phoneRegex.test(value)) {
+            showError(control, errorMsg, 'Please enter a valid phone number');
+            return false;
+        } else {
+            showSuccess(control, successMsg);
+            return true;
+        }
+    }
+
+    function validateService() {
+        const value = serviceSelect.value;
+        const control = serviceSelect.parentElement.parentElement;
+        const errorMsg = document.getElementById('serviceError');
+        const successMsg = document.getElementById('serviceSuccess');
+
+        if (!value) {
+            showError(control, errorMsg, 'Please select a service');
+            return false;
+        } else {
+            showSuccess(control, successMsg);
+            return true;
+        }
+    }
+
+    function validateMessage() {
+        const value = messageInput.value.trim();
+        const control = messageInput.parentElement;
+        const errorMsg = document.getElementById('messageError');
+        const successMsg = document.getElementById('messageSuccess');
+
+        if (!value) {
+            showError(control, errorMsg, 'Message is required');
+            return false;
+        } else if (value.length < 10) {
+            showError(control, errorMsg, 'Message must be at least 10 characters');
+            return false;
+        } else if (value.length > 500) {
+            showError(control, errorMsg, 'Message must not exceed 500 characters');
+            return false;
+        } else {
+            showSuccess(control, successMsg);
+            return true;
+        }
+    }
+
+    function updateCharCount() {
+        const count = messageInput.value.length;
+        const charCountEl = messageInput.parentElement.querySelector('.char-count');
+        charCountEl.textContent = count + '/500';
+    }
+
+    function showError(control, errorEl, message) {
+        control.classList.remove('success');
+        control.classList.add('error');
+        errorEl.textContent = message;
+        errorEl.style.display = 'block';
+    }
+
+    function showSuccess(control, successEl) {
+        control.classList.remove('error');
+        control.classList.add('success');
+        successEl.textContent = '✓ Looks good!';
+        successEl.style.display = 'block';
+    }
+
+    // Form submission
+    form.addEventListener('submit', function(e) {
+        e.preventDefault();
+
+        const isNameValid = validateName();
+        const isEmailValid = validateEmail();
+        const isPhoneValid = validatePhone();
+        const isServiceValid = validateService();
+        const isMessageValid = validateMessage();
+
+        if (isNameValid && isEmailValid && isPhoneValid && isServiceValid && isMessageValid) {
+            // Form is valid - proceed with submission
+            this.submit();
+        }
+    });
+});
+</script>
+
+
+
+<script>
+function sendToWhatsApp() {
+
+    var name = document.querySelector('input[name="name"]').value;
+    var email = document.querySelector('input[name="email"]').value;
+    var phone = document.querySelector('input[name="phone"]').value;
+    var service = document.getElementById("your-problem").value;
+    var message = document.querySelector('textarea[name="message"]').value;
+
+    var whatsappNumber = "923443159287";
+
+    var url = "https://wa.me/" + whatsappNumber + "?text="
+        + "New Inquiry From Website:%0a%0a"
+        + "Name: " + name + "%0a"
+        + "Email: " + email + "%0a"
+        + "Phone: " + phone + "%0a"
+        + "Service: " + service + "%0a"
+        + "Message: " + message;
+
+    window.open(url, '_blank');
+}
+</script>
+
+<!-- /.contact-three section-space-bottom -->
 
                 <footer class="main-footer">
                     <div class="container">

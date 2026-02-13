@@ -15164,30 +15164,30 @@ body.megamenu-popup-active .mobile-nav__content {
   animation: stroke 5s infinite alternate;
   stroke-width: 2;
   font-weight: 900;
-  stroke: var(--lotech-base, #4946EC);
+  stroke: var(--lotech-base, rgba(233, 169, 32, 0.75)); /* previously var(--lotech-base) */
   text-transform: uppercase;
 }
 
 @keyframes stroke {
   0% {
-    fill: rgba(var(--lotech-white-rgb, 255, 255, 255), 0);
-    stroke: rgba(var(--lotech-base-rgb, 73, 70, 236), 1);
+    fill: rgba(0,0,0,0); /* transparent start */
+    stroke: var(--lotech-base, rgba(233, 169, 32, 0.75));
     stroke-dashoffset: 25%;
     stroke-dasharray: 0 50%;
     stroke-width: 2;
   }
   70% {
-    fill: rgba(var(--lotech-white-rgb, 255, 255, 255), 0);
-    stroke: rgba(var(--lotech-base-rgb, 73, 70, 236), 1);
+    fill: rgba(0,0,0,0);
+    stroke: var(--lotech-base, rgba(233, 169, 32, 0.75));
   }
   80% {
-    fill: rgba(var(--lotech-white-rgb, 255, 255, 255), 0);
-    stroke: rgba(var(--lotech-base-rgb, 73, 70, 236), 1);
+    fill: rgba(0,0,0,0);
+    stroke: var(--lotech-base, rgba(233, 169, 32, 0.75));
     stroke-width: 2;
   }
   100% {
-    fill: rgba(var(--lotech-base-rgb, 73, 70, 236), 1);
-    stroke: rgba(var(--lotech-white-rgb, 255, 255, 255), 0);
+    fill: black; /* final color black */
+    stroke: rgba(255, 255, 255, 0);
     stroke-dashoffset: -25%;
     stroke-dasharray: 50% 0;
     stroke-width: 0;

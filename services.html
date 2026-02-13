@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Shared on THEMELOCK.COM - Our Services || Lotech || HTML Template For Technology & IT Solutions</title>
+    <title>Our Services </title>
     <!-- favicons Icons -->
     <link rel="apple-touch-icon" sizes="180x180" href="assets/images/favicons/apple-touch-icon.png" />
     <link rel="icon" type="image/png" sizes="32x32" href="assets/images/favicons/favicon-32x32.png" />
@@ -33,6 +33,7 @@
     <link rel="stylesheet" href="assets/vendors/aos/aos.css">
     <link rel="stylesheet" href="assets/vendors/owl-carousel/css/owl.carousel.min.css" />
     <link rel="stylesheet" href="assets/vendors/owl-carousel/css/owl.theme.default.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 
     <!-- template styles -->
     <link rel="stylesheet" href="assets/css/lotech.css" />
@@ -43,38 +44,125 @@
     <div class="custom-cursor__cursor"></div>
     <div class="custom-cursor__cursor-two"></div>
 
-    <div class="preloader">
-        <div class="preloader__image" style="background-image: url(assets/images/loader.png);"></div>
-    </div>
+   
     <!-- /.preloader -->
     <div class="page-wrapper">
-        <div class="topbar">
+    <div class="topbar">
             <div class="container">
                 <div class="topbar__inner">
                     <a href="#" class="topbar__toggler main-header__toggler"><i><span></span><span></span><span></span></i>Menu</a>
-                    <div class="topbar__logo">
-                        <a href="index.html">
-                            <img src="assets/images/logo-dark.png" alt="Lotech HTML" width="133">
-                        </a>
-                    </div><!-- /.topbar__logo -->
+                   <div class="topbar__logo"
+     style="display:flex; justify-content:center; align-items:center; width:100%;">
+    
+    <a href="index.html" style="display:flex; align-items:center; gap:10px; text-decoration:none;">
+
+        <!-- Loader Icon -->
+        <div class="loader"></div>
+
+        <!-- Company Name -->
+        <span
+            style="
+                font-size:30px;
+                font-weight:700;
+                letter-spacing:2px;
+                color:#111;
+                font-family:'Poppins', Arial, sans-serif;
+            "
+        >
+            BYTEGEN
+        </span>
+
+    </a>
+</div>
+
+<style>
+/* Loader CSS */
+.loader {
+    position: relative;
+    width: 2.5em;
+    height: 2.5em;
+    transform: rotate(165deg);
+}
+
+.loader:before,
+.loader:after {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    display: block;
+    width: 0.5em;
+    height: 0.5em;
+    border-radius: 0.25em;
+    transform: translate(-50%, -50%);
+}
+
+.loader:before {
+    animation: before8 2s infinite;
+}
+
+.loader:after {
+    animation: after6 2s infinite;
+}
+
+@keyframes before8 {
+    0% {
+        width: 0.5em;
+        box-shadow: 1em -0.5em rgba(225, 20, 98, 0.75),
+                    -1em 0.5em rgba(111, 202, 220, 0.75);
+    }
+    35% {
+        width: 2.5em;
+        box-shadow: 0 -0.5em rgba(225, 20, 98, 0.75),
+                    0 0.5em rgba(111, 202, 220, 0.75);
+    }
+    70% {
+        width: 0.5em;
+        box-shadow: -1em -0.5em rgba(225, 20, 98, 0.75),
+                     1em 0.5em rgba(111, 202, 220, 0.75);
+    }
+    100% {
+        box-shadow: 1em -0.5em rgba(225, 20, 98, 0.75),
+                    -1em 0.5em rgba(111, 202, 220, 0.75);
+    }
+}
+
+@keyframes after6 {
+    0% {
+        height: 0.5em;
+        box-shadow: 0.5em 1em rgba(61, 184, 143, 0.75),
+                    -0.5em -1em rgba(233, 169, 32, 0.75);
+    }
+    35% {
+        height: 2.5em;
+        box-shadow: 0.5em 0 rgba(61, 184, 143, 0.75),
+                    -0.5em 0 rgba(233, 169, 32, 0.75);
+    }
+    70% {
+        height: 0.5em;
+        box-shadow: 0.5em -1em rgba(61, 184, 143, 0.75),
+                    -0.5em 1em rgba(233, 169, 32, 0.75);
+    }
+    100% {
+        box-shadow: 0.5em 1em rgba(61, 184, 143, 0.75),
+                    -0.5em -1em rgba(233, 169, 32, 0.75);
+    }
+}
+</style>
+
+<!-- /.topbar__logo -->
                     <div class="topbar__social">
                         <p class="topbar__social__text">Follow Us</p>
                         <a href="https://facebook.com">
                             <i class="fab fa-facebook-f" aria-hidden="true"></i>
                             <span class="sr-only">Facebook</span>
                         </a>
-                        <a href="https://x.com">
-                            <i class="fab fa-twitter" aria-hidden="true"></i>
-                            <span class="sr-only">Twitter</span>
-                        </a>
+                       
                         <a href="https://instagram.com">
                             <i class="fab fa-instagram" aria-hidden="true"></i>
                             <span class="sr-only">Instagram</span>
                         </a>
-                        <a href="https://www.youtube.com/">
-                            <i class="fab fa-youtube" aria-hidden="true"></i>
-                            <span class="sr-only">Youtube</span>
-                        </a>
+                       
                     </div><!-- /.topbar-one__social -->
                 </div>
             </div>
@@ -85,125 +173,19 @@
                     <nav class="main-header__nav main-menu">
                         <ul class="main-menu__list">
 
-
-                            <li class="megamenu megamenu-clickable megamenu-clickable--toggler">
-                                <a href="index.html" data-title="Demos"><span>Demos</span></a>
-                                <ul>
-                                    <li>
-                                        <div class="megamenu-popup">
-                                            <a href="#" class="megamenu-clickable--close"><span class="icon-close"></span></a>
-                                            <!-- /.megamenu-clickable--close -->
-                                            <div class="megamenu-popup__content">
-                                                <div class="demo-one">
-                                                    <div class="container">
-                                                        <div class="row">
-                                                            <div class="col-md-6 col-lg-4">
-                                                                <div class="demo-one__card">
-                                                                    <div class="demo-one__image">
-                                                                        <img src="assets/images/lotech-landing/home-1.jpg" alt="lotech">
-                                                                        <div class="demo-one__btns">
-                                                                            <a href="index.html" class="lotech-btn demo-one__btn">
-                                                                                <span>Multi Page</span>
-                                                                            </a><!-- /.thm-btn demo-one__btn -->
-                                                                            <a href="index-one-page.html" class="lotech-btn demo-one__btn">
-                                                                                <span>One Page</span>
-                                                                            </a><!-- /.thm-btn demo-one__btn -->
-                                                                        </div><!-- /.demo-one__btns -->
-                                                                    </div><!-- /.demo-one__image -->
-                                                                    <div class="demo-one__content">
-                                                                        <h3 class="demo-one__title">
-                                                                            <a href="index.html">Home Page 01</a>
-                                                                        </h3><!-- /.demo-one__title -->
-                                                                    </div><!-- /.demo-one__content -->
-                                                                </div><!-- /.demo-one__card -->
-                                                            </div><!-- /.col-md-6 col-lg-3 -->
-                                                            <div class="col-md-6 col-lg-4">
-                                                                <div class="demo-one__card">
-                                                                    <div class="demo-one__image">
-                                                                        <img src="assets/images/lotech-landing/home-2.jpg" alt="lotech">
-                                                                        <div class="demo-one__btns">
-                                                                            <a href="index-2.html" class="lotech-btn demo-one__btn">
-                                                                                <span>Multi Page</span>
-                                                                            </a><!-- /.thm-btn demo-one__btn -->
-                                                                            <a href="index-2-one-page.html" class="lotech-btn demo-one__btn">
-                                                                                <span>One Page</span>
-                                                                            </a><!-- /.thm-btn demo-one__btn -->
-                                                                        </div><!-- /.demo-one__btns -->
-                                                                    </div><!-- /.demo-one__image -->
-                                                                    <div class="demo-one__content">
-                                                                        <h3 class="demo-one__title">
-                                                                            <a href="index-2.html">Home Page 02</a>
-                                                                        </h3><!-- /.demo-one__title -->
-                                                                    </div><!-- /.demo-one__content -->
-                                                                </div><!-- /.demo-one__card -->
-                                                            </div><!-- /.col-md-6 col-lg-3 -->
-                                                            <div class="col-md-6 col-lg-4">
-                                                                <div class="demo-one__card">
-                                                                    <div class="demo-one__image">
-                                                                        <img src="assets/images/lotech-landing/home-3.jpg" alt="lotech">
-                                                                        <div class="demo-one__btns">
-                                                                            <a href="index-3.html" class="lotech-btn demo-one__btn">
-                                                                                <span>Multi Page</span>
-                                                                            </a><!-- /.thm-btn demo-one__btn -->
-                                                                            <a href="index-3-one-page.html" class="lotech-btn demo-one__btn">
-                                                                                <span>One Page</span>
-                                                                            </a><!-- /.thm-btn demo-one__btn -->
-                                                                        </div><!-- /.demo-one__btns -->
-                                                                    </div><!-- /.demo-one__image -->
-                                                                    <div class="demo-one__content">
-                                                                        <h3 class="demo-one__title">
-                                                                            <a href="index-3.html">Home Page 03</a>
-                                                                        </h3><!-- /.demo-one__title -->
-                                                                    </div><!-- /.demo-one__content -->
-                                                                </div><!-- /.demo-one__card -->
-                                                            </div><!-- /.col-md-6 col-lg-3 -->
-                                                            <div class="col-md-6 col-lg-4">
-                                                                <div class="demo-one__card">
-                                                                    <div class="demo-one__image">
-                                                                        <img src="assets/images/lotech-landing/home-boxed.jpg" alt="lotech">
-                                                                        <div class="demo-one__btns">
-                                                                            <a href="index-boxed.html" class="lotech-btn demo-one__btn">
-                                                                                <span>View Page</span>
-                                                                            </a><!-- /.thm-btn demo-one__btn -->
-                                                                        </div><!-- /.demo-one__btns -->
-                                                                    </div><!-- /.demo-one__image -->
-                                                                    <div class="demo-one__content">
-                                                                        <h3 class="demo-one__title">
-                                                                            <a href="index-boxed.html">Home Boxed</a>
-                                                                        </h3><!-- /.demo-one__title -->
-                                                                    </div><!-- /.demo-one__content -->
-                                                                </div><!-- /.demo-one__card -->
-                                                            </div><!-- /.col-md-6 col-lg-3 -->
-                                                            <div class="col-md-6 col-lg-4">
-                                                                <div class="demo-one__card">
-                                                                    <div class="demo-one__image">
-                                                                        <img src="assets/images/lotech-landing/home-rtl.jpg" alt="lotech">
-                                                                        <div class="demo-one__btns">
-                                                                            <a href="index-rtl.html" class="lotech-btn demo-one__btn">
-                                                                                <span>View Page</span>
-                                                                            </a><!-- /.thm-btn demo-one__btn -->
-                                                                        </div><!-- /.demo-one__btns -->
-                                                                    </div><!-- /.demo-one__image -->
-                                                                    <div class="demo-one__content">
-                                                                        <h3 class="demo-one__title">
-                                                                            <a href="index-rtl.html">Home RTL</a>
-                                                                        </h3><!-- /.demo-one__title -->
-                                                                    </div><!-- /.demo-one__content -->
-                                                                </div><!-- /.demo-one__card -->
-                                                            </div><!-- /.col-md-6 col-lg-3 -->
-                                                        </div><!-- /.row -->
-                                                    </div><!-- /.container -->
-                                                </div><!-- /.demos-one -->
-                                            </div><!-- /.megamenu-popup__content -->
-                                        </div><!-- /.megamenu-popup -->
-                                    </li>
-                                </ul>
+                            <li class="">
+                                <a href="index.html" data-title="Home"><span>Home</span></a>
+                                
                             </li>
+
 
                             <li>
                                 <a href="about.html" data-title="About"><span>About</span></a>
                             </li>
-                            <li class="dropdown">
+                            <li>
+                                <a href="services.html" data-title="Services"><span>Services</span></a>
+                            </li>
+                            <!-- <li class="dropdown">
                                 <a href="#" data-title="Pages"><span>Pages</span></a>
                                 <ul>
                                     <li>
@@ -326,7 +308,7 @@
                                     <li><a href="cart.html">Cart</a></li>
                                     <li><a href="checkout.html">Checkout</a></li>
                                 </ul>
-                            </li>
+                            </li> -->
                             <li class="dropdown">
                                 <a href="#" data-title="Blog"><span>Blog</span></a>
                                 <ul class="sub-menu">
@@ -383,10 +365,7 @@
                             <span></span>
                             <span></span>
                         </div><!-- /.mobile-nav__toggler -->
-                        <a href="#" class="search-toggler main-header__search">
-                            <i class="flaticon-search" aria-hidden="true"></i>
-                            <span class="sr-only">Search</span>
-                        </a><!-- /.search-toggler -->
+                       
                         <a href="contact.html" class="lotech-btn main-header__btn">
                             <span>Get a Quote<span class="lotech-btn__icon"><i class="flaticon-up-right-arrow"></i><i class="flaticon-up-right-arrow"></i></span></span>
                         </a><!-- /.thm-btn main-header__btn -->
@@ -399,7 +378,7 @@
             <div id="smooth-content">
 
                 <section class="page-header">
-                    <div class="page-header__bg" style="background-image: url(assets/images/backgrounds/page-header-services-bg.jpg);"></div><!-- /.page-header__bg -->
+                    <div class="page-header__bg" style="background-image: url(assets/images/banner.jpeg);"></div><!-- /.page-header__bg -->
                     <div class="container">
                         <div class="page-header__content">
                             <h2 class="page-header__title">Our Services</h2>
@@ -412,164 +391,183 @@
                 </section><!-- /.page-header -->
 
                 <!-- Service Start -->
-                <section class="service-two">
-                    <div class="container">
-                        <div class="row gutter-y-24 gutter-x-24">
-                            <div class="col-xl-3 col-md-6" data-aos="fade-up" data-aos-duration="1200" data-aos-delay="100">
-                                <div class="service-two__item">
-                                    <div class="service-two__item__hover">
-                                        <span class="service-two__item__hover__item"></span>
-                                        <span class="service-two__item__hover__item"></span>
-                                        <span class="service-two__item__hover__item"></span>
-                                        <span class="service-two__item__hover__item"></span>
-                                    </div>
-                                    <h3 class="service-two__item__title">
-                                        <a href="service-d-consulting.html">IT Strategy Consulting</a>
-                                    </h3><!-- /.service-title -->
-                                    <p class="service-two__item__text">Helping businesses IT strategies aligned with their.</p><!-- /.service-text -->
-                                    <div class="service-two__item__icon"><i class="flaticon-consulting"></i></div><!-- /.service-icon -->
-                                    <a href="service-d-consulting.html" class="service-two__item__btn">
-                                        <span class="service-two__item__btn__text">Read More</span>
-                                        <span class="service-two__item__btn__icon"><i class="flaticon-long-arrow-right"></i></span>
-                                    </a>
-                                </div><!-- /.service-card-one -->
-                            </div><!-- col-xl-3 col-md-6 -->
-                            <div class="col-xl-3 col-md-6" data-aos="fade-up" data-aos-duration="1300" data-aos-delay="200">
-                                <div class="service-two__item">
-                                    <div class="service-two__item__hover">
-                                        <span class="service-two__item__hover__item"></span>
-                                        <span class="service-two__item__hover__item"></span>
-                                        <span class="service-two__item__hover__item"></span>
-                                        <span class="service-two__item__hover__item"></span>
-                                    </div>
-                                    <h3 class="service-two__item__title">
-                                        <a href="service-d-intelligence.html">Business Intelligence</a>
-                                    </h3><!-- /.service-title -->
-                                    <p class="service-two__item__text">Helping businesses IT strategies aligned with their.</p><!-- /.service-text -->
-                                    <div class="service-two__item__icon"><i class="flaticon-inteligence"></i></div><!-- /.service-icon -->
-                                    <a href="service-d-intelligence.html" class="service-two__item__btn">
-                                        <span class="service-two__item__btn__text">Read More</span>
-                                        <span class="service-two__item__btn__icon"><i class="flaticon-long-arrow-right"></i></span>
-                                    </a>
-                                </div><!-- /.service-card-one -->
-                            </div><!-- col-xl-3 col-md-6 -->
-                            <div class="col-xl-3 col-md-6" data-aos="fade-up" data-aos-duration="1400" data-aos-delay="300">
-                                <div class="service-two__item">
-                                    <div class="service-two__item__hover">
-                                        <span class="service-two__item__hover__item"></span>
-                                        <span class="service-two__item__hover__item"></span>
-                                        <span class="service-two__item__hover__item"></span>
-                                        <span class="service-two__item__hover__item"></span>
-                                    </div>
-                                    <h3 class="service-two__item__title">
-                                        <a href="service-d-services.html">Services Backup</a>
-                                    </h3><!-- /.service-title -->
-                                    <p class="service-two__item__text">Helping businesses IT strategies aligned with their.</p><!-- /.service-text -->
-                                    <div class="service-two__item__icon"><i class="flaticon-backup"></i></div><!-- /.service-icon -->
-                                    <a href="service-d-services.html" class="service-two__item__btn">
-                                        <span class="service-two__item__btn__text">Read More</span>
-                                        <span class="service-two__item__btn__icon"><i class="flaticon-long-arrow-right"></i></span>
-                                    </a>
-                                </div><!-- /.service-card-one -->
-                            </div><!-- col-xl-3 col-md-6 -->
-                            <div class="col-xl-3 col-md-6" data-aos="fade-up" data-aos-duration="1500" data-aos-delay="400">
-                                <div class="service-two__item">
-                                    <div class="service-two__item__hover">
-                                        <span class="service-two__item__hover__item"></span>
-                                        <span class="service-two__item__hover__item"></span>
-                                        <span class="service-two__item__hover__item"></span>
-                                        <span class="service-two__item__hover__item"></span>
-                                    </div>
-                                    <h3 class="service-two__item__title">
-                                        <a href="service-d-security.html">Cyber Security</a>
-                                    </h3><!-- /.service-title -->
-                                    <p class="service-two__item__text">Helping businesses IT strategies aligned with their.</p><!-- /.service-text -->
-                                    <div class="service-two__item__icon"><i class="flaticon-cyber1"></i></div><!-- /.service-icon -->
-                                    <a href="service-d-security.html" class="service-two__item__btn">
-                                        <span class="service-two__item__btn__text">Read More</span>
-                                        <span class="service-two__item__btn__icon"><i class="flaticon-long-arrow-right"></i></span>
-                                    </a>
-                                </div><!-- /.service-card-one -->
-                            </div><!-- col-xl-3 col-md-6 -->
-                            <div class="col-xl-3 col-md-6" data-aos="fade-up" data-aos-duration="1200" data-aos-delay="100">
-                                <div class="service-two__item">
-                                    <div class="service-two__item__hover">
-                                        <span class="service-two__item__hover__item"></span>
-                                        <span class="service-two__item__hover__item"></span>
-                                        <span class="service-two__item__hover__item"></span>
-                                        <span class="service-two__item__hover__item"></span>
-                                    </div>
-                                    <h3 class="service-two__item__title">
-                                        <a href="service-d-network.html">Network & Infrastructure</a>
-                                    </h3><!-- /.service-title -->
-                                    <p class="service-two__item__text">Helping businesses IT strategies aligned with their.</p><!-- /.service-text -->
-                                    <div class="service-two__item__icon"><i class="flaticon-network"></i></div><!-- /.service-icon -->
-                                    <a href="service-d-network.html" class="service-two__item__btn">
-                                        <span class="service-two__item__btn__text">Read More</span>
-                                        <span class="service-two__item__btn__icon"><i class="flaticon-long-arrow-right"></i></span>
-                                    </a>
-                                </div><!-- /.service-card-one -->
-                            </div><!-- col-xl-3 col-md-6 -->
-                            <div class="col-xl-3 col-md-6" data-aos="fade-up" data-aos-duration="1300" data-aos-delay="200">
-                                <div class="service-two__item">
-                                    <div class="service-two__item__hover">
-                                        <span class="service-two__item__hover__item"></span>
-                                        <span class="service-two__item__hover__item"></span>
-                                        <span class="service-two__item__hover__item"></span>
-                                        <span class="service-two__item__hover__item"></span>
-                                    </div>
-                                    <h3 class="service-two__item__title">
-                                        <a href="service-d-software.html">Software Development</a>
-                                    </h3><!-- /.service-title -->
-                                    <p class="service-two__item__text">Helping businesses IT strategies aligned with their.</p><!-- /.service-text -->
-                                    <div class="service-two__item__icon"><i class="flaticon-mobile"></i></div><!-- /.service-icon -->
-                                    <a href="service-d-software.html" class="service-two__item__btn">
-                                        <span class="service-two__item__btn__text">Read More</span>
-                                        <span class="service-two__item__btn__icon"><i class="flaticon-long-arrow-right"></i></span>
-                                    </a>
-                                </div><!-- /.service-card-one -->
-                            </div><!-- col-xl-3 col-md-6 -->
-                            <div class="col-xl-3 col-md-6" data-aos="fade-up" data-aos-duration="1400" data-aos-delay="300">
-                                <div class="service-two__item">
-                                    <div class="service-two__item__hover">
-                                        <span class="service-two__item__hover__item"></span>
-                                        <span class="service-two__item__hover__item"></span>
-                                        <span class="service-two__item__hover__item"></span>
-                                        <span class="service-two__item__hover__item"></span>
-                                    </div>
-                                    <h3 class="service-two__item__title">
-                                        <a href="service-d-data.html">Data & Analytics</a>
-                                    </h3><!-- /.service-title -->
-                                    <p class="service-two__item__text">Helping businesses IT strategies aligned with their.</p><!-- /.service-text -->
-                                    <div class="service-two__item__icon"><i class="flaticon-data"></i></div><!-- /.service-icon -->
-                                    <a href="service-d-data.html" class="service-two__item__btn">
-                                        <span class="service-two__item__btn__text">Read More</span>
-                                        <span class="service-two__item__btn__icon"><i class="flaticon-long-arrow-right"></i></span>
-                                    </a>
-                                </div><!-- /.service-card-one -->
-                            </div><!-- col-xl-3 col-md-6 -->
-                            <div class="col-xl-3 col-md-6" data-aos="fade-up" data-aos-duration="1500" data-aos-delay="400">
-                                <div class="service-two__item">
-                                    <div class="service-two__item__hover">
-                                        <span class="service-two__item__hover__item"></span>
-                                        <span class="service-two__item__hover__item"></span>
-                                        <span class="service-two__item__hover__item"></span>
-                                        <span class="service-two__item__hover__item"></span>
-                                    </div>
-                                    <h3 class="service-two__item__title">
-                                        <a href="service-d-support.html">Technical Support</a>
-                                    </h3><!-- /.service-title -->
-                                    <p class="service-two__item__text">Helping businesses IT strategies aligned with their.</p><!-- /.service-text -->
-                                    <div class="service-two__item__icon"><i class="flaticon-technical-support"></i></div><!-- /.service-icon -->
-                                    <a href="service-d-support.html" class="service-two__item__btn">
-                                        <span class="service-two__item__btn__text">Read More</span>
-                                        <span class="service-two__item__btn__icon"><i class="flaticon-long-arrow-right"></i></span>
-                                    </a>
-                                </div><!-- /.service-card-one -->
-                            </div><!-- col-xl-3 col-md-6 -->
-                        </div>
+
+
+<section class="service-two">
+    <div class="container">
+        <div class="row gutter-y-24 gutter-x-24">
+            <!-- Web Development -->
+            <div class="col-xl-3 col-md-6" data-aos="fade-up" data-aos-duration="1200" data-aos-delay="100">
+                <div class="service-two__item" style="height: 100%; display: flex; flex-direction: column;">
+                    <div class="service-two__item__hover">
+                        <span class="service-two__item__hover__item"></span>
+                        <span class="service-two__item__hover__item"></span>
+                        <span class="service-two__item__hover__item"></span>
+                        <span class="service-two__item__hover__item"></span>
                     </div>
-                </section>
+                    <h3 class="service-two__item__title">
+                        <a href="webdev_detail.html">Web Development</a>
+                    </h3>
+                    <p class="service-two__item__text">Building modern, responsive, and scalable websites for businesses.</p>
+                    <div class="service-two__item__icon"><i class="fas fa-code"></i></div>
+                    <a href="webdev_detail.html" class="service-two__item__btn" style="margin-top: auto;">
+                        <span class="service-two__item__btn__text">Read More</span>
+                        <span class="service-two__item__btn__icon"><i class="fas fa-arrow-right"></i></span>
+                    </a>
+                </div>
+            </div>
+
+            <!-- Agentic AI Solutions -->
+            <div class="col-xl-3 col-md-6" data-aos="fade-up" data-aos-duration="1300" data-aos-delay="200">
+                <div class="service-two__item" style="height: 100%; display: flex; flex-direction: column;">
+                    <div class="service-two__item__hover">
+                        <span class="service-two__item__hover__item"></span>
+                        <span class="service-two__item__hover__item"></span>
+                        <span class="service-two__item__hover__item"></span>
+                        <span class="service-two__item__hover__item"></span>
+                    </div>
+                    <h3 class="service-two__item__title">
+                        <a href="agenticAI_detail.html">Agentic AI Solutions</a>
+                    </h3>
+                    <p class="service-two__item__text">Implementing AI-driven solutions to automate and optimize business processes.</p>
+                    <div class="service-two__item__icon"><i class="fas fa-robot"></i></div>
+                    <a href="agenticAI_detail.html" class="service-two__item__btn" style="margin-top: auto;">
+                        <span class="service-two__item__btn__text">Read More</span>
+                        <span class="service-two__item__btn__icon"><i class="fas fa-arrow-right"></i></span>
+                    </a>
+                </div>
+            </div>
+
+            <!-- Business Data Analysis -->
+            <div class="col-xl-3 col-md-6" data-aos="fade-up" data-aos-duration="1400" data-aos-delay="300">
+                <div class="service-two__item" style="height: 100%; display: flex; flex-direction: column;">
+                    <div class="service-two__item__hover">
+                        <span class="service-two__item__hover__item"></span>
+                        <span class="service-two__item__hover__item"></span>
+                        <span class="service-two__item__hover__item"></span>
+                        <span class="service-two__item__hover__item"></span>
+                    </div>
+                    <h3 class="service-two__item__title">
+                        <a href="dataanalysis_detail.html">Business Data Analysis</a>
+                    </h3>
+                    <p class="service-two__item__text">Analyzing and interpreting business data to make informed decisions.</p>
+                    <div class="service-two__item__icon"><i class="fas fa-chart-line"></i></div>
+                    <a href="dataanalysis_detail.html" class="service-two__item__btn" style="margin-top: auto;">
+                        <span class="service-two__item__btn__text">Read More</span>
+                        <span class="service-two__item__btn__icon"><i class="fas fa-arrow-right"></i></span>
+                    </a>
+                </div>
+            </div>
+
+            <!-- Creative Graphic Designing -->
+            <div class="col-xl-3 col-md-6" data-aos="fade-up" data-aos-duration="1500" data-aos-delay="400">
+                <div class="service-two__item" style="height: 100%; display: flex; flex-direction: column;">
+                    <div class="service-two__item__hover">
+                        <span class="service-two__item__hover__item"></span>
+                        <span class="service-two__item__hover__item"></span>
+                        <span class="service-two__item__hover__item"></span>
+                        <span class="service-two__item__hover__item"></span>
+                    </div>
+                    <h3 class="service-two__item__title">
+                        <a href="graphic_detail.html">Creative Graphic Designing</a>
+                    </h3>
+                    <p class="service-two__item__text">Designing visually appealing graphics for branding and marketing campaigns.</p>
+                    <div class="service-two__item__icon"><i class="fas fa-paint-brush"></i></div>
+                    <a href="graphic_detail.html" class="service-two__item__btn" style="margin-top: auto;">
+                        <span class="service-two__item__btn__text">Read More</span>
+                        <span class="service-two__item__btn__icon"><i class="fas fa-arrow-right"></i></span>
+                    </a>
+                </div>
+            </div>
+
+            <!-- SEO Optimization -->
+            <div class="col-xl-3 col-md-6" data-aos="fade-up" data-aos-duration="1200" data-aos-delay="100">
+                <div class="service-two__item" style="height: 100%; display: flex; flex-direction: column;">
+                    <div class="service-two__item__hover">
+                        <span class="service-two__item__hover__item"></span>
+                        <span class="service-two__item__hover__item"></span>
+                        <span class="service-two__item__hover__item"></span>
+                        <span class="service-two__item__hover__item"></span>
+                    </div>
+                    <h3 class="service-two__item__title">
+                        <a href="service-seo.html">SEO Optimization</a>
+                    </h3>
+                    <p class="service-two__item__text">Improving website visibility and search engine rankings to attract more traffic.</p>
+                    <div class="service-two__item__icon"><i class="fas fa-search"></i></div>
+                    <a href="service-seo.html" class="service-two__item__btn" style="margin-top: auto;">
+                        <span class="service-two__item__btn__text">Read More</span>
+                        <span class="service-two__item__btn__icon"><i class="fas fa-arrow-right"></i></span>
+                    </a>
+                </div>
+            </div>
+
+            <!-- Digital Marketing Strategy -->
+            <div class="col-xl-3 col-md-6" data-aos="fade-up" data-aos-duration="1300" data-aos-delay="200">
+                <div class="service-two__item" style="height: 100%; display: flex; flex-direction: column;">
+                    <div class="service-two__item__hover">
+                        <span class="service-two__item__hover__item"></span>
+                        <span class="service-two__item__hover__item"></span>
+                        <span class="service-two__item__hover__item"></span>
+                        <span class="service-two__item__hover__item"></span>
+                    </div>
+                    <h3 class="service-two__item__title">
+                        <a href="service-digital-marketing.html">Digital Marketing Strategy</a>
+                    </h3>
+                    <p class="service-two__item__text">Creating effective marketing strategies to grow online presence and engagement.</p>
+                    <div class="service-two__item__icon"><i class="fas fa-bullhorn"></i></div>
+                    <a href="service-digital-marketing.html" class="service-two__item__btn" style="margin-top: auto;">
+                        <span class="service-two__item__btn__text">Read More</span>
+                        <span class="service-two__item__btn__icon"><i class="fas fa-arrow-right"></i></span>
+                    </a>
+                </div>
+            </div>
+
+            <!-- IT Support & Maintenance -->
+            <div class="col-xl-3 col-md-6" data-aos="fade-up" data-aos-duration="1400" data-aos-delay="300">
+                <div class="service-two__item" style="height: 100%; display: flex; flex-direction: column;">
+                    <div class="service-two__item__hover">
+                        <span class="service-two__item__hover__item"></span>
+                        <span class="service-two__item__hover__item"></span>
+                        <span class="service-two__item__hover__item"></span>
+                        <span class="service-two__item__hover__item"></span>
+                    </div>
+                    <h3 class="service-two__item__title">
+                        <a href="service-it-support.html">IT Support & Maintenance</a>
+                    </h3>
+                    <p class="service-two__item__text">Providing reliable IT support and system maintenance for smooth operations.</p>
+                    <div class="service-two__item__icon"><i class="fas fa-headset"></i></div>
+                    <a href="service-it-support.html" class="service-two__item__btn" style="margin-top: auto;">
+                        <span class="service-two__item__btn__text">Read More</span>
+                        <span class="service-two__item__btn__icon"><i class="fas fa-arrow-right"></i></span>
+                    </a>
+                </div>
+            </div>
+
+            <!-- UI / UX Experience Design -->
+            <div class="col-xl-3 col-md-6" data-aos="fade-up" data-aos-duration="1500" data-aos-delay="400">
+                <div class="service-two__item" style="height: 100%; display: flex; flex-direction: column;">
+                    <div class="service-two__item__hover">
+                        <span class="service-two__item__hover__item"></span>
+                        <span class="service-two__item__hover__item"></span>
+                        <span class="service-two__item__hover__item"></span>
+                        <span class="service-two__item__hover__item"></span>
+                    </div>
+                    <h3 class="service-two__item__title">
+                        <a href="service-ui-ux.html">UI / UX Experience Design</a>
+                    </h3>
+                    <p class="service-two__item__text">Designing user-friendly interfaces and experiences that delight users.</p>
+                    <div class="service-two__item__icon"><i class="fas fa-object-ungroup"></i></div>
+                    <a href="service-ui-ux.html" class="service-two__item__btn" style="margin-top: auto;">
+                        <span class="service-two__item__btn__text">Read More</span>
+                        <span class="service-two__item__btn__icon"><i class="fas fa-arrow-right"></i></span>
+                    </a>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</section>
+
                 <!-- Service End -->
 
                 <div class="client-carousel ">
