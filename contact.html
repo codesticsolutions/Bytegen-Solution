@@ -444,71 +444,67 @@
                     </p>
 
                     <!-- ✅ FORM WITH PROFESSIONAL VALIDATION -->
-                    <form id="contactForm" class="contact-three__form contact-form-validated form-one" 
-                          action="inc/sendemail.php"
-                          method="POST"
-                          data-aos="fade-up" 
-                          data-aos-duration="1200" 
-                          data-aos-delay="300"
-                          novalidate>
+                   <form id="contactForm" class="contact-three__form contact-form-validated form-one" 
+      action="inc/sendemail.php"
+      method="POST"
+      novalidate>
 
-                        <div class="form-one__group">
-                            <div class="form-one__control">
-                                <input type="text" name="name" id="name" placeholder="Your Name*" required>
-                                <span class="error-message" id="nameError"></span>
-                                <span class="success-message" id="nameSuccess"></span>
-                            </div>
+    <div class="form-one__group">
 
-                            <div class="form-one__control">
-                                <input type="email" name="email" id="email" placeholder="E-mail Address*" required>
-                                <span class="error-message" id="emailError"></span>
-                                <span class="success-message" id="emailSuccess"></span>
-                            </div>
+        <div class="form-one__control">
+            <input type="text" name="name" id="name" placeholder="Your Name*" required>
+            <span class="error-message" id="nameError"></span>
+            <span class="success-message" id="nameSuccess"></span>
+        </div>
 
-                            <div class="form-one__control">
-                                <input type="tel" name="phone" id="phone" placeholder="Phone Number*" required>
-                                <span class="error-message" id="phoneError"></span>
-                                <span class="success-message" id="phoneSuccess"></span>
-                            </div>
+        <div class="form-one__control">
+            <input type="email" name="email" id="email" placeholder="E-mail Address*" required>
+            <span class="error-message" id="emailError"></span>
+            <span class="success-message" id="emailSuccess"></span>
+        </div>
 
-                            <div class="form-one__control">
-                                <div class="form-one__control__select">
-                                    <label class="sr-only" for="your-problem">Service Interested*</label>
-                                    <select class="selectpicker" id="your-problem" name="service" required>
-                                        <option value="">Select Service*</option>
-                                        <option value="web-development">Web Development</option>
-                                        <option value="digital-marketing">Digital Marketing</option>
-                                        <option value="agentic-ai">Agentic AI</option>
-                                        <option value="seo">SEO</option>
-                                        <option value="data-analysis">Data Analysis</option>  
-                                        <option value="it-consulting">IT Consulting</option>
-                                        <option value="other">Other</option>
-                                    </select>
-                                </div>
-                                <span class="error-message" id="serviceError"></span>
-                                <span class="success-message" id="serviceSuccess"></span>
-                            </div>
+        <div class="form-one__control">
+            <input type="tel" name="phone" id="phone" placeholder="Phone Number*" required>
+            <span class="error-message" id="phoneError"></span>
+            <span class="success-message" id="phoneSuccess"></span>
+        </div>
 
-                            <div class="form-one__control form-one__control--full">
-                                <textarea name="message" id="message" placeholder="Tell us about your project" required></textarea>
-                                <span class="char-count">0/500</span>
-                                <span class="error-message" id="messageError"></span>
-                                <span class="success-message" id="messageSuccess"></span>
-                            </div>
+        <div class="form-one__control">
+            <div class="form-one__control__select">
+                <select id="your-problem" name="service" required>
+                    <option value="">Select Service*</option>
+                    <option value="Web Development">Web Development</option>
+                    <option value="Digital Marketing">Digital Marketing</option>
+                    <option value="Agentic AI">Agentic AI</option>
+                    <option value="SEO">SEO</option>
+                    <option value="Data Analysis">Data Analysis</option>  
+                    <option value="IT Consulting">IT Consulting</option>
+                    <option value="Other">Other</option>
+                </select>
+            </div>
+            <span class="error-message" id="serviceError"></span>
+            <span class="success-message" id="serviceSuccess"></span>
+        </div>
 
-                            <div class="form-one__control form-one__control--full">
-                                <button type="submit" class="lotech-btn">
-                                    <span>
-                                        Send Message
-                                        <span class="lotech-btn__icon">
-                                            <i class="flaticon-up-right-arrow"></i>
-                                            <i class="flaticon-up-right-arrow"></i>
-                                        </span>
-                                    </span>
-                                </button>
-                            </div>
-                        </div>
-                    </form>
+
+        
+
+        <div class="form-one__control form-one__control--full">
+            <textarea name="message" id="message" placeholder="Tell us about your project" required></textarea>
+            <span class="char-count">0/500</span>
+            <span class="error-message" id="messageError"></span>
+            <span class="success-message" id="messageSuccess"></span>
+        </div>
+
+        <div class="form-one__control form-one__control--full">
+            <button type="submit" class="lotech-btn">
+                Send Message
+            </button>
+        </div>
+
+    </div>
+</form>
+
 
                     <div class="result"></div>
                 </div>
@@ -525,6 +521,45 @@
 
 <style>
 /* Professional Validation Styles */
+
+.form-one__control select {
+    width: 100%;
+    height: 55px;
+    padding: 0 15px;
+
+    background: #fff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+
+    font-size: 15px;
+    font-family: inherit;
+    color: #222;
+
+    outline: none;
+    transition: all 0.3s ease;
+    cursor: pointer;
+}
+
+/* Hover */
+.form-one__control select:hover {
+    border-color: #DEAD6F;   /* aapka theme accent */
+}
+
+/* Focus */
+.form-one__control select:focus {
+    border-color: #DEAD6F;
+    box-shadow: 0 0 0 3px rgba(222, 173, 111, 0.15);
+}
+
+/* Error State */
+.form-one__control select.error {
+    border-color: #ff4d4d;
+}
+
+/* Success State */
+.form-one__control select.success {
+    border-color: #28a745;
+}
 .form-one__control {
     position: relative;
     margin-bottom: 24px;
@@ -645,14 +680,170 @@
 
 <script>
 document.addEventListener('DOMContentLoaded', function() {
+
     const form = document.getElementById('contactForm');
     const nameInput = document.getElementById('name');
     const emailInput = document.getElementById('email');
     const phoneInput = document.getElementById('phone');
     const serviceSelect = document.getElementById('your-problem');
     const messageInput = document.getElementById('message');
+    const charCountEl = document.querySelector('.char-count');
 
-    // Real-time validation
+    /* ---------------- VALIDATION FUNCTIONS ---------------- */
+
+    function validateName() {
+        const value = nameInput.value.trim();
+        const errorMsg = document.getElementById('nameError');
+        const successMsg = document.getElementById('nameSuccess');
+
+        resetMessages(errorMsg, successMsg);
+
+        if (!value) {
+            showError(errorMsg, 'Name is required');
+            return false;
+        } 
+        if (value.length < 2) {
+            showError(errorMsg, 'Name must be at least 2 characters');
+            return false;
+        }
+
+        showSuccess(successMsg);
+        return true;
+    }
+
+    function validateEmail() {
+        const value = emailInput.value.trim();
+        const errorMsg = document.getElementById('emailError');
+        const successMsg = document.getElementById('emailSuccess');
+        const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+
+        resetMessages(errorMsg, successMsg);
+
+        if (!value) {
+            showError(errorMsg, 'Email is required');
+            return false;
+        } 
+        if (!emailRegex.test(value)) {
+            showError(errorMsg, 'Enter a valid email');
+            return false;
+        }
+
+        showSuccess(successMsg);
+        return true;
+    }
+
+    function validatePhone() {
+        const value = phoneInput.value.trim();
+        const errorMsg = document.getElementById('phoneError');
+        const successMsg = document.getElementById('phoneSuccess');
+        const phoneRegex = /^[\d\s\-\+\(\)]{10,}$/;
+
+        resetMessages(errorMsg, successMsg);
+
+        if (!value) {
+            showError(errorMsg, 'Phone number is required');
+            return false;
+        } 
+        if (!phoneRegex.test(value)) {
+            showError(errorMsg, 'Enter a valid phone number');
+            return false;
+        }
+
+        showSuccess(successMsg);
+        return true;
+    }
+
+    function validateService() {
+        const value = serviceSelect.value;
+        const errorMsg = document.getElementById('serviceError');
+        const successMsg = document.getElementById('serviceSuccess');
+
+        resetMessages(errorMsg, successMsg);
+
+        if (!value) {
+            showError(errorMsg, 'Please select a service');
+            return false;
+        }
+
+        showSuccess(successMsg);
+        return true;
+    }
+
+    function validateMessage() {
+        const value = messageInput.value.trim();
+        const errorMsg = document.getElementById('messageError');
+        const successMsg = document.getElementById('messageSuccess');
+
+        resetMessages(errorMsg, successMsg);
+
+        if (!value) {
+            showError(errorMsg, 'Message is required');
+            return false;
+        } 
+        if (value.length < 10) {
+            showError(errorMsg, 'Message too short');
+            return false;
+        } 
+        if (value.length > 500) {
+            showError(errorMsg, 'Max 500 characters allowed');
+            return false;
+        }
+
+        showSuccess(successMsg);
+        return true;
+    }
+
+    /* ---------------- CHARACTER COUNTER ---------------- */
+
+    function updateCharCount() {
+        const count = messageInput.value.length;
+        charCountEl.textContent = count + "/500";
+    }
+
+    /* ---------------- UI HELPERS ---------------- */
+
+    function showError(el, message) {
+        el.textContent = message;
+        el.style.display = 'block';
+    }
+
+    function showSuccess(el) {
+        el.textContent = "✓ Looks good!";
+        el.style.display = 'block';
+    }
+
+    function resetMessages(errorEl, successEl) {
+        errorEl.style.display = 'none';
+        successEl.style.display = 'none';
+    }
+
+    /* ---------------- WHATSAPP FUNCTION ---------------- */
+
+    function sendToWhatsApp() {
+
+        var name = nameInput.value;
+        var email = emailInput.value;
+        var phone = phoneInput.value;
+        var service = serviceSelect.value;
+        var message = messageInput.value;
+
+        var whatsappNumber = "923443159287";
+
+        var text =
+            "New Inquiry From Website:\n\n" +
+            "Name: " + name + "\n" +
+            "Email: " + email + "\n" +
+            "Phone: " + phone + "\n" +
+            "Service: " + service + "\n" +
+            "Message: " + message;
+
+        var url = "https://wa.me/" + whatsappNumber + "?text=" + encodeURIComponent(text);
+
+        window.open(url, '_blank');
+    }
+
+    /* ---------------- EVENT LISTENERS ---------------- */
+
     nameInput.addEventListener('blur', validateName);
     emailInput.addEventListener('blur', validateEmail);
     phoneInput.addEventListener('blur', validatePhone);
@@ -660,160 +851,30 @@ document.addEventListener('DOMContentLoaded', function() {
     messageInput.addEventListener('blur', validateMessage);
     messageInput.addEventListener('input', updateCharCount);
 
-    function validateName() {
-        const value = nameInput.value.trim();
-        const control = nameInput.parentElement;
-        const errorMsg = document.getElementById('nameError');
-        const successMsg = document.getElementById('nameSuccess');
+    /* ---------------- FORM SUBMIT ---------------- */
 
-        if (!value) {
-            showError(control, errorMsg, 'Name is required');
-            return false;
-        } else if (value.length < 2) {
-            showError(control, errorMsg, 'Name must be at least 2 characters');
-            return false;
-        } else {
-            showSuccess(control, successMsg);
-            return true;
-        }
-    }
-
-    function validateEmail() {
-        const value = emailInput.value.trim();
-        const control = emailInput.parentElement;
-        const errorMsg = document.getElementById('emailError');
-        const successMsg = document.getElementById('emailSuccess');
-        const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
-
-        if (!value) {
-            showError(control, errorMsg, 'Email is required');
-            return false;
-        } else if (!emailRegex.test(value)) {
-            showError(control, errorMsg, 'Please enter a valid email address');
-            return false;
-        } else {
-            showSuccess(control, successMsg);
-            return true;
-        }
-    }
-
-    function validatePhone() {
-        const value = phoneInput.value.trim();
-        const control = phoneInput.parentElement;
-        const errorMsg = document.getElementById('phoneError');
-        const successMsg = document.getElementById('phoneSuccess');
-        const phoneRegex = /^[\d\s\-\+\(\)]{10,}$/;
-
-        if (!value) {
-            showError(control, errorMsg, 'Phone number is required');
-            return false;
-        } else if (!phoneRegex.test(value)) {
-            showError(control, errorMsg, 'Please enter a valid phone number');
-            return false;
-        } else {
-            showSuccess(control, successMsg);
-            return true;
-        }
-    }
-
-    function validateService() {
-        const value = serviceSelect.value;
-        const control = serviceSelect.parentElement.parentElement;
-        const errorMsg = document.getElementById('serviceError');
-        const successMsg = document.getElementById('serviceSuccess');
-
-        if (!value) {
-            showError(control, errorMsg, 'Please select a service');
-            return false;
-        } else {
-            showSuccess(control, successMsg);
-            return true;
-        }
-    }
-
-    function validateMessage() {
-        const value = messageInput.value.trim();
-        const control = messageInput.parentElement;
-        const errorMsg = document.getElementById('messageError');
-        const successMsg = document.getElementById('messageSuccess');
-
-        if (!value) {
-            showError(control, errorMsg, 'Message is required');
-            return false;
-        } else if (value.length < 10) {
-            showError(control, errorMsg, 'Message must be at least 10 characters');
-            return false;
-        } else if (value.length > 500) {
-            showError(control, errorMsg, 'Message must not exceed 500 characters');
-            return false;
-        } else {
-            showSuccess(control, successMsg);
-            return true;
-        }
-    }
-
-    function updateCharCount() {
-        const count = messageInput.value.length;
-        const charCountEl = messageInput.parentElement.querySelector('.char-count');
-        charCountEl.textContent = count + '/500';
-    }
-
-    function showError(control, errorEl, message) {
-        control.classList.remove('success');
-        control.classList.add('error');
-        errorEl.textContent = message;
-        errorEl.style.display = 'block';
-    }
-
-    function showSuccess(control, successEl) {
-        control.classList.remove('error');
-        control.classList.add('success');
-        successEl.textContent = '✓ Looks good!';
-        successEl.style.display = 'block';
-    }
-
-    // Form submission
     form.addEventListener('submit', function(e) {
         e.preventDefault();
 
-        const isNameValid = validateName();
-        const isEmailValid = validateEmail();
-        const isPhoneValid = validatePhone();
-        const isServiceValid = validateService();
-        const isMessageValid = validateMessage();
+        const isValid =
+            validateName() &&
+            validateEmail() &&
+            validatePhone() &&
+            validateService() &&
+            validateMessage();
 
-        if (isNameValid && isEmailValid && isPhoneValid && isServiceValid && isMessageValid) {
-            // Form is valid - proceed with submission
-            this.submit();
+        if (isValid) {
+
+            sendToWhatsApp();   // ✅ REDIRECT FIXED
+
+            // OPTIONAL → Agar email bhi bhejna ho
+            // form.submit();
         }
     });
+
 });
 </script>
 
-
-
-<script>
-function sendToWhatsApp() {
-
-    var name = document.querySelector('input[name="name"]').value;
-    var email = document.querySelector('input[name="email"]').value;
-    var phone = document.querySelector('input[name="phone"]').value;
-    var service = document.getElementById("your-problem").value;
-    var message = document.querySelector('textarea[name="message"]').value;
-
-    var whatsappNumber = "923443159287";
-
-    var url = "https://wa.me/" + whatsappNumber + "?text="
-        + "New Inquiry From Website:%0a%0a"
-        + "Name: " + name + "%0a"
-        + "Email: " + email + "%0a"
-        + "Phone: " + phone + "%0a"
-        + "Service: " + service + "%0a"
-        + "Message: " + message;
-
-    window.open(url, '_blank');
-}
-</script>
 
 <!-- /.contact-three section-space-bottom -->
 
